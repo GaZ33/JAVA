@@ -22,14 +22,39 @@ public class Introducao {
         String nome = inputMame();
         System.err.println("Hello " + nome);
     }
+
+    public static void stringManipulation(String[] args) {
+        String text;
+        Scanner scanner = new Scanner(System.in); // Criando o scanner para ler um input do usuÃ¡rio
+
+        System.out.println("Digite algum texto: ");
+
+        text = scanner.next();
+
+        String text2 = text; // Cria uma cÃ³pia de text para text2
+        System.out.println("Quantidade de caracteres na string: " + text.length()); // Quantidade de caracteres
+        System.out.println("Upper case: " + text.toUpperCase()); // Texto para uppercase
+        System.out.println("Lower case:" + text.toLowerCase()); // Texto para lowercase
+        System.out.println("Substring da 2Â° para a 5Â° letra" + text.substring(2, 6));
+        System.out.println("Remover espaÃ§os em branco: " + text.trim());
+        System.out.println("Retornar a 3Â° letra do texto" + text.charAt(2));
+        System.out.println("Retorna o index do 1Â° 'a' que encontrar, se retornar -1 Ã© pq n existe na string:" + text.indexOf(("a")));
+        System.out.println("Retorna o index da Ãºltima ocorrÃªncia, se nÃ£o existir retorna -1" + text.lastIndexOf(text2));
+        
+
+
+        scanner.close(); // Fechando o scanner apÃ³s o uso
+        System.out.println("");
+    }
     
     public static String inputMame() {
         String name;
-        Scanner scanner = new Scanner(System.in); // Criando o scanner para ler do usuário
+        Scanner scanner = new Scanner(System.in); // Criando o scanner para ler do usuï¿½rio
     
         System.out.println("Digite seu nome: ");
-        name = scanner.next(); // Lendo o input do usuário em string
-        
+        name = scanner.next(); // Lendo o input do usuÃ¡rio em string
+        scanner.close(); // Fechando o objeto scanner - evitar vazamento de dados
+
         return name;
     }
     
@@ -50,32 +75,32 @@ public class Introducao {
     }
     public static void condicionais() {
         if (true) {
-            System.out.println("True é verdadeiro");
+            System.out.println("True ï¿½ verdadeiro");
         }
         
         int valor1 = 10;
         int valor2 = 20;
         if (valor1 > valor2)
         {
-            System.err.println("Valor1 é meaior que valor2");
+            System.err.println("Valor1 ï¿½ meaior que valor2");
         }
         else
         {
-            System.out.println("Valor2 é maior que valor1");
+            System.out.println("Valor2 ï¿½ maior que valor1");
         }
         
         String valorSwitch = "batata";
         switch (valorSwitch) {
             case "P?O":
-                System.err.println("A variável é P?O");
+                System.err.println("A variï¿½vel ï¿½ P?O");
                 break;
             case "batata":
-                System.err.println("A variável é batata");
+                System.err.println("A variï¿½vel ï¿½ batata");
                 break;
             case "queijo":
-                System.err.println("A variável é queijo");
+                System.err.println("A variï¿½vel ï¿½ queijo");
             default:
-                System.err.println("A variável n?o é nenhuma das anteriores");
+                System.err.println("A variï¿½vel n?o ï¿½ nenhuma das anteriores");
         }
     }
 }
