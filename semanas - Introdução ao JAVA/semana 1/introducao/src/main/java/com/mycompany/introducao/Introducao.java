@@ -40,8 +40,12 @@ public class Introducao {
         System.out.println("Retornar a 3° letra do texto" + text.charAt(2));
         System.out.println("Retorna o index do 1° 'a' que encontrar, se retornar -1 é pq n existe na string:" + text.indexOf(("a")));
         System.out.println("Retorna o index da última ocorrência, se não existir retorna -1" + text.lastIndexOf(text2));
-        
-
+        System.out.println("Comparação de duas strings text igual a text2:" + text.equals(text2));
+        System.out.println("Retorna em boolean se o texto está vazio" + text.isEmpty());
+        System.out.println("Retorna uma lista com as palavras separadas por espaço" + text.split(" ")); // Semelhando ao python
+        System.out.println("Retorna uma lista com os caracteres separadas individualmente" + text.split("")); 
+        System.out.println("Retorna uma lista com os textos separados por ',': " + text.split(","));
+        System.out.println("Retorna todos os \"a\" por \"#\":" + text.replace("a", text));
 
         scanner.close(); // Fechando o scanner após o uso
         System.out.println("");
