@@ -13,9 +13,11 @@ import java.util.Scanner;
 public class Introducao {
 
     public static void main(String[] args) {
-        hello();
-        loops();
-        condicionais();
+        casting();
+        manipulacaoString();
+//        hello();
+//        loops();
+//        condicionais();
     }
     
     public static void hello() {
@@ -23,7 +25,7 @@ public class Introducao {
         System.err.println("Hello " + nome);
     }
 
-    public static void stringManipulation(String[] args) {
+    public static void manipulacaoString() {
         String text;
         Scanner scanner = new Scanner(System.in); // Criando o scanner para ler um input do usuário
 
@@ -49,6 +51,24 @@ public class Introducao {
 
         scanner.close(); // Fechando o scanner após o uso
         System.out.println("");
+    }
+
+    public static void casting() 
+    {
+        Integer inteiro = 10;
+        Long longo = 1000l; // Precisa do l no final
+        Float flutuante = 5.0f; // Precisa de um f no final
+        Double duplo = 5.1; //
+        Boolean booleano = true;
+        String caracteres = "O imundo";
+        
+        System.out.println("Tipos em java:");
+        System.out.println("Inteiro: " + inteiro.getClass().getName());
+        System.out.println("Longo: " + longo.getClass().getName());
+        System.out.println("Flutuante: " + flutuante.getClass().getName());
+        System.out.println("Duplo: " + duplo.getClass().getName());
+        System.out.println("Boolean: " + booleano.getClass().getName());
+        System.out.println("String: " + caracteres.getClass().getName());
     }
     
     public static String inputMame() {
