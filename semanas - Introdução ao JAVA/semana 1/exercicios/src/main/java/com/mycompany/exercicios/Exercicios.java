@@ -4,6 +4,8 @@
 
 package com.mycompany.exercicios;
 
+import java.util.Scanner;
+
 /**
  *
  * @author gasin
@@ -11,6 +13,69 @@ package com.mycompany.exercicios;
 public class Exercicios {
 
     public static void main(String[] args) {
+        //chamandoFuncao();
+        int lista[] = criaVetorFibonacci(6);;
+        int v[] = inverterVetor(lista);
+        for (int i = 0; i < lista.length; i++)
+        {
+            System.out.println(v[i]);
+        }
         System.out.println("Hello World!");
     }
+    
+    // Questão 1
+    public static int[] criaVetorFibonacci(int n) 
+    {
+        int[] lista = new int[n];
+        lista[0] = 0;
+        lista[1] = 1;
+
+        for (int i = 2; i < n; i++)
+        {
+            lista[i] = lista[i-1] + lista[i-2];
+        }
+        return lista;
+    }
+    
+    // Questão 2
+    
+    public static int[] inverterVetor(int[] v) 
+    {
+     int[] novoVetor = new int[v.length];
+     for (int i = v.length - 1, j = 0; i >= 0; i--, j++)
+     {
+         novoVetor[j] = v[i];
+     }
+     return novoVetor;
+    }
+    
+    // Questão 3
+    public static void chamandoFuncao() 
+    {
+        int tamanho;
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("Digite um numero:");
+        tamanho = scanner.nextInt();
+        
+        int[] fibonacci = criaVetorFibonacci(tamanho);
+        
+        System.err.println("Sequência de fibonacci:");
+        for(int i : fibonacci)
+        {
+            System.out.print("\t" + i);
+        }
+        
+        int[] invertido = inverterVetor(fibonacci);
+        
+        System.err.println("\nSequência de fibonacci invertida:");
+        for(int i : invertido)
+        {
+            System.out.print("\t" + i);
+        }
+        
+        scanner.close();
+        
+    }
 }
+
