@@ -15,9 +15,9 @@ public class Introducao {
     public static void main(String[] args) {
         casting();
         manipulacaoString();
-//        hello();
-//        loops();
-//        condicionais();
+        hello();
+        loops();
+        condicionais();
     }
     
     public static void hello() {
@@ -99,32 +99,80 @@ public class Introducao {
     }
     public static void condicionais() {
         if (true) {
-            System.out.println("True � verdadeiro");
+            System.out.println("True é verdadeiro");
         }
         
         int valor1 = 10;
         int valor2 = 20;
         if (valor1 > valor2)
         {
-            System.err.println("Valor1 � meaior que valor2");
+            System.err.println("Valor1 é meaior que valor2");
         }
         else
         {
-            System.out.println("Valor2 � maior que valor1");
+            System.out.println("Valor2 é maior que valor1");
         }
         
         String valorSwitch = "batata";
         switch (valorSwitch) {
-            case "P?O":
-                System.err.println("A vari�vel � P?O");
+            case "PãO":
+                System.err.println("A variável é P?O");
                 break;
             case "batata":
-                System.err.println("A vari�vel � batata");
+                System.err.println("A variável é batata");
                 break;
             case "queijo":
-                System.err.println("A vari�vel � queijo");
+                System.err.println("A variável é queijo");
             default:
-                System.err.println("A vari�vel n?o � nenhuma das anteriores");
+                System.err.println("A variável não é nenhuma das anteriores");
+        }
+    }
+    public static void arrayMatrizes() 
+    {
+        // Array
+        int vetor[] = {1, 2, 3, 4, 5}; // 1° maneira de declarar
+        int[] vetor2 = {6, 7, 8, 9, 10}; // 2° maneira de declarar
+        
+        // Iterando o vetor
+        for (int i = 0; i < vetor.length; i++)
+        {
+            System.out.println(vetor[i]);
+            
+        }
+        // For each do python
+        for (int numero : vetor2)
+        {
+            System.out.println(numero);
+        }
+        
+        // Matrizes
+        int matriz[][] = {
+            {1, 2, 3},
+            {4, 5, 6},
+            {7, 8, 9}
+        }; // 1° maneira de declarar matriz
+        
+        int[][] matriz2 = {
+            {11, 12, 13},
+            {14, 15, 16},
+            {17, 18, 19}
+        };
+        
+        // iterando
+        for (int i = 0; i < matriz.length; i++)
+        {
+            for (int j = 0; j < matriz[i].length; j++)
+            {
+                System.out.print(matriz[i][j]);
+            }
+            System.out.print("");
+        }
+        // 2° maneira de iterar
+        for (int[] matriz1 : matriz2) {
+            for (int matrzv : matriz1) {
+                System.out.print(matriz1[matrzv]);
+            }
+            System.out.print("");
         }
     }
 }
