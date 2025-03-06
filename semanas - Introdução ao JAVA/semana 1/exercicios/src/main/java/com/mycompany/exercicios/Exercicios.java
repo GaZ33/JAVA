@@ -145,7 +145,7 @@ public class Exercicios {
 
     // Questão 7
 
-    public static int contaMaiores(iin[][]t m, int x) 
+    public static int contaMaiores(int[][] m, int x) 
     {
         int total = 0;
 
@@ -161,6 +161,70 @@ public class Exercicios {
             }
         return total;
     }
+
+    // Questão 8
+
+    public static int contaPares(int[][] m) 
+    {
+        int total = 0;
+
+        for(int i = 0; i < m.length; i++) 
+            {
+                for(int j = 0; j < m[i].length; j++)
+                    {
+                        if(m[i][j] % 2 == 0)
+                        {
+                            total++;
+                        }
+                    }
+            }
+        return total;
+    }
+
+    // Questão 9
+
+    public static double somaMaiores(double[][] m, double x) 
+    {
+        Double total = 0;
+
+        for(int i = 0; i < m.length; i++) 
+            {
+                for(int j = 0; j < m[i].length; j++)
+                    {
+                        if(m[i][j] > x)
+                        {
+                            total = total + m[i][j];
+                        }
+                    }
+            }
+        return total;
+    }
+
+    // Questão 10
+    
+    public static double mediaMenores(double[][] m, double x) 
+    {
+        Double total = 0;
+        double quantidade = 0;
+
+        for(int i = 0; i < m.length; i++) 
+            {
+                for(int j = 0; j < m[i].length; j++)
+                    {
+                        if(m[i][j] < x)
+                        {
+                            total = total + m[i][j];
+                            quantidade++;
+                        }
+                    }
+            }
+        if (quantidade == 0)
+        {
+            return 0;
+        }
+        return total / quantidade;
+    }
+    
     
     
 }
