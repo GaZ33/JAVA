@@ -99,7 +99,6 @@ public class Exercicios {
     public static int[][] CriaMatriz(int min, int max, int lin, int col) 
     {
         int matriz[][] = new int[lin][col];
-        
         Random random = new Random();
         
         for(int[] linha : matriz)
@@ -118,9 +117,31 @@ public class Exercicios {
             }
             System.out.print("\n");
         }
-
         return matriz;
-        
     }
+
+    // Questão 6
+    
+    public static boolean ehSimetrica(iint m[][]) 
+    {
+        // Verificando se a matriz não é quadrada
+        if(m.length != m[].length)
+        {
+            return false
+        }
+        // Verificando sua transposta
+        for(int i = 0; i < m.length; i++) 
+            {
+                for(int j = i; j < m[i].length; j++)
+                    {
+                        if(m[i][j] != m[j][i])
+                        {
+                            return false;
+                        }
+                    }
+            }
+        return true;
+    }
+    
 }
 
