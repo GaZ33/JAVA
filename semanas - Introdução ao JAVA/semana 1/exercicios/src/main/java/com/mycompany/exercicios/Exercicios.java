@@ -4,6 +4,7 @@
 
 package com.mycompany.exercicios;
 
+import java.util.Random;
 import java.util.Scanner;
 
 /**
@@ -13,6 +14,7 @@ import java.util.Scanner;
 public class Exercicios {
 
     public static void main(String[] args) {
+//        CriaMatriz(20, 50, 2, 2);
         //chamandoFuncao();
         int lista[] = criaVetorFibonacci(6);;
         int v[] = inverterVetor(lista);
@@ -75,6 +77,49 @@ public class Exercicios {
         }
         
         scanner.close();
+    }
+    
+    // Questão 4
+    
+    public static int[] criaVetor(int min, int max, int n) 
+    {
+        int listaAleatoria[] = new int[n];
+        Random random = new Random();
+        
+        for (int i = 0; i < n; i++)
+        {
+            listaAleatoria[i] = random.nextInt(max - min + 1) + min;
+        }
+        
+        return listaAleatoria;
+    }
+    
+    // Questão 5
+    
+    public static int[][] CriaMatriz(int min, int max, int lin, int col) 
+    {
+        int matriz[][] = new int[lin][col];
+        
+        Random random = new Random();
+        
+        for(int[] linha : matriz)
+        {
+            for(int j = 0; j < col; j++)
+            {
+                linha[j] = random.nextInt(max - min + 1) + min;           
+            }
+        }
+        
+        for(int[] linha : matriz)
+        {
+            for(int coluna : linha)
+            {
+                System.out.print("\t" + coluna);
+            }
+            System.out.print("\n");
+        }
+
+        return matriz;
         
     }
 }
