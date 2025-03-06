@@ -142,6 +142,26 @@ public class Exercicios {
             }
         return true;
     }
+
+    // Questão 7
+
+    public static int contaMaiores(iin[][]t m, int x) 
+    {
+        int total = 0;
+
+        for(int i = 0; i < m.length; i++) 
+            {
+                for(int j = 0; j < m[i].length; j++)
+                    {
+                        if(m[i][j] > x)
+                        {
+                            total++;
+                        }
+                    }
+            }
+        return total;
+    }
+    
     
 }
 
