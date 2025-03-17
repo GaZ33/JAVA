@@ -11,6 +11,17 @@ package com.mycompany.mavenproject2;
 public class Mavenproject2 {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        int n = 10;
+        // Instanciando a classe com o construtor sem argumento
+        ExemploClasse exemploSemArgumento = new ExemploClasse();
+        
+        // Instanciando a classe com o construtor de 1 argumento
+        ExemploClasse exemploComString = new ExemploClasse("Jhonn");
+        
+        // Instanciando a classe com o construtor sem argumetno
+        ExemploClasse exemploCom2Argumentos= new ExemploClasse(n, "SP");
+        
+        
     }
+
 }

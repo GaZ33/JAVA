@@ -12,9 +12,12 @@ public class ExemploClasse {
     // Criando variável privada para a clase
     private int valor;
     private String nome;
+    
     // Criando variável publica para a classe
     public int valor2;
     
+    // Criando variável constantes
+    public static final Double PI = 3.14;
     
     
     // Criando construtor sem argumento
@@ -37,6 +40,25 @@ public class ExemploClasse {
         System.out.println("Inicializando a Classe com 2 argumentos string: " + this.nome + " e int público: " + valor2);
     }
     
+    
+    
+    // ENCAPSULAMENTO
+    // TODO: Métodos de manipulação
+    
+    
+    
+    
+    // TODO: Getters and Setters
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    // TODO: HERANÇA
     
     
     
