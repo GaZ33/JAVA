@@ -32,9 +32,10 @@ public class ExemploClasse {
         this.nome = nome;
         System.out.println("Inicializando a Classe com um argumento de string: " + this.nome);
     }
+    // Criando construtor com 2 argumentos
     public ExemploClasse(int n, String nome)
     {
-        valor2 = n;
+        this.valor2 = n;
         valor = n;
         this.nome = nome;
         System.out.println("Inicializando a Classe com 2 argumentos string: " + this.nome + " e int público: " + valor2);
@@ -44,24 +45,56 @@ public class ExemploClasse {
     
     // ENCAPSULAMENTO
     // TODO: Métodos de manipulação
+    public void exemploMetodoClasse()
+    {
+        System.out.println("Método ExemploMetodoClasse");
+    }
+    public void incrementarUmNoValor()
+    {
+        System.out.println("Método: IncrementarUmNoValor");
+        System.out.println("Valor antes: " + this.valor);
+        this.valor = this.valor + 1;
+        System.out.println("Valor depois: " + this.valor);
+    }
+    public void incrmentarValor2(int n)
+    {
+        System.out.println("Método: IncrmentarValor2");
+        System.out.println("Valor2 antes: " + this.valor2);
+        this.valor2 = this.valor2 + n;
+        System.out.println("Valor2 depois: " + this.valor2);
+    }
     
+   
     
-    
-    
-    // TODO: Getters and Setters
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    // TODO: HERANÇA
-    
-    
-    
-    
-    
+    // Getters and Setters
+    // Getters
+    public int getValor()
+    {
+        return this.valor;
+    }
+    public int getValor2()
+    {
+        return valor2;
+    }
+    public String getNome()
+    {
+        return this.nome;
+    }
+    public static Double getPI()
+    {
+        return PI;
+    }
+    // Setters
+    public void setValor(int n)
+    {
+        this.valor = n;
+    }
+    public void setValor2(int n)
+    {
+        valor2 = n;
+    }
+    public void setNome(String str)
+    {
+        this.nome = str;
+    }
 }
