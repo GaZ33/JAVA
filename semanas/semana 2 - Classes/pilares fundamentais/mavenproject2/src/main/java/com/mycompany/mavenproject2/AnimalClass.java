@@ -10,7 +10,7 @@ package com.mycompany.mavenproject2;
  */
 public class AnimalClass {
     private int idade;
-    private String nome;
+    protected String nome;
     
     // Construtores
     public AnimalClass()
@@ -31,4 +31,37 @@ public class AnimalClass {
         this.idade = idade;
     }
     
+    // Getters
+    public int getIdade()
+    {
+        return this.idade;
+    }
+    public String getNome()
+    {
+        return this.nome;
+    }
+    
+    // Setters
+    public void setIdade(int n)
+    {
+        this.idade = n;
+    }
+    public void setNome(String str)
+    {
+        this.nome = str;
+    }
+    
+    // Métodos
+    public void animalFaz()
+    {
+        System.out.println("*Barulho*");
+    }
+    public void animalAniversario()
+    {
+        this.idade = this.idade + 1;
+    }
+    public void metodoTesteParaHeranca()
+    {
+        System.out.println("Utilizando metodoTesteParaHeranca");
+    }
 }
