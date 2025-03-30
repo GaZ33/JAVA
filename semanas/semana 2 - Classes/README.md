@@ -1,7 +1,7 @@
 # Classes e Pilares fundamentais em POO
 
 ### Tópicos abordados
-* Clsses
+* Classes
 * Mensagens
 * Instâncias de objeto
 * Construtores e destrutores
