@@ -11,6 +11,7 @@ package com.mycompany.mavenproject2;
 public class Gato extends AnimalClass {
     private String cor;
     private Boolean ehFilhote;
+    private int vidas = 7;
     
     
     public Gato(String nome)
@@ -44,6 +45,33 @@ public class Gato extends AnimalClass {
         this.setIdade(getIdade() + 7);
     }
     
+    // Getters
+    public boolean getEhFilhote()
+    {
+        return this.ehFilhote;
+    }
+    public String getCor()
+    {
+        return this.cor;
+    }
+    public int getVidas()
+    {
+        return this.vidas;
+    }
+    
+    // Setters
+    public void setEhFilhote(boolean ehFilhote)
+    {
+        this.ehFilhote = ehFilhote;
+    }
+    public void setCor(String cor)
+    {
+        this.cor = cor;
+    }
+    public void setVidas(int vidas)
+    {
+        this.vidas = vidas;
+    }
     
     
 }
