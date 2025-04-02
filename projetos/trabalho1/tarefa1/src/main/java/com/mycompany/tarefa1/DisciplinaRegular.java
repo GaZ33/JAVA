@@ -1,0 +1,23 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.mycompany.tarefa1;
+
+/**
+ *
+ * @author gasin
+ */
+public class DisciplinaRegular extends Disciplina{
+
+    @Override
+    public double calcularMedia() {
+        
+    }
+
+    @Override
+    public boolean situacaoAprovacao() {
+       
+    }
+    
+}
