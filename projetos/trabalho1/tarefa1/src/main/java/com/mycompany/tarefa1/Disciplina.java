@@ -10,6 +10,23 @@ package com.mycompany.tarefa1;
  */
 abstract class Disciplina {
     private String nome;
+    
+    // Declarando métodos abstratos
     public abstract double calcularMedia();
     public abstract boolean situacaoAprovacao();
+    
+    // Construtor
+    public Disciplina(String nome) {
+        this.nome = nome;
+    }
+    
+    // Getters e setter
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+    
 }

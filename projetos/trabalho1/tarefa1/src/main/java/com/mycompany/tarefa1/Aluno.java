@@ -10,7 +10,7 @@ package com.mycompany.tarefa1;
  */
 public class Aluno {
     private String nome, ra;
-
+    private Disciplina disciplinas[];
     
     
     // Getters
@@ -20,6 +20,10 @@ public class Aluno {
     public String getRa() {
         return this.ra;
     }
+    public Disciplina[] getDisciplinas() {
+        return disciplinas;
+    }
+    
     
     // Setters
     public void setNome(String nome) {
@@ -28,5 +32,9 @@ public class Aluno {
     public void setRa(String ra) {
         this.ra = ra;
     }
+    public void setDisciplinas(Disciplina[] disciplinas) {
+        this.disciplinas = disciplinas;
+    }
+
     
 }
